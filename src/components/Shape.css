@@ -1,0 +1,31 @@
+.shape1 {
+  clip-path: polygon(0 0, 45% 0, 30% 100%, 0% 100%);
+}
+
+.shape2 {
+  clip-path: polygon(45% 0, 50% 0, 35% 50%, 30% 50%);
+}
+
+.shape3 {
+  clip-path: polygon(50% 0, 67% 0, 52% 50%, 35% 50%);
+}
+
+.shape4 {
+  clip-path: polygon(67% 0, 85% 0, 70% 50%, 52% 50%);
+}
+
+.shape5 {
+  clip-path: polygon(35% 50%, 52% 50%, 67% 100%, 50% 100%);
+}
+
+.shape6 {
+  clip-path: polygon(52% 50%, 70% 50%, 85% 100%, 67% 100%);
+}
+
+.shape7 {
+  clip-path: polygon(30% 50%, 35% 50%, 50% 100%, 30% 100%);
+}
+
+.shape8 {
+  clip-path: polygon(70% 50%, 100% 0, 100% 100%, 85% 100%);
+}
