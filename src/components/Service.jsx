@@ -3,8 +3,8 @@ import React from 'react';
 
 const ServicesSection = () => {
   return (
-    <div className='h-screen'>
-      <section className="h-11/12 bg-[#f5f7fd] px-4 sm:px-6 md:px-16 flex flex-col lg:flex-row py-16 sm:py-24 lg:py-36 justify-between gap-8 lg:gap-40">
+    <div className='min-h-screen xl:h-screen'>
+      <section className="min-h-screen xl:h-11/12 bg-[#f5f7fd] px-4 sm:px-6 md:px-16 flex flex-col lg:flex-row py-16 sm:py-24 lg:py-36 justify-between gap-8 lg:gap-40">
         {/* LEFT CONTENT */}
         <div className="max-w-full lg:max-w-m flex-shrink-0">
           <p className="text-[#1b76aa] text-lg md:text-2xl font-medium tracking-wider mb-2">OUR SERVICES</p>

@@ -50,9 +50,9 @@ const WhySkedaraSection = () => {
       {/* Main content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-20">
         {/* "WHY Skedara?" Text */}
-        <div className="flex items-center mb-16 relative">
+        <div className="flex items-center mb-10 relative">
           <div className="flex items-center space-x-1">
-            <span className="font-['Inter'] text-[#1C77AB] text-xs sm:text-sm">
+            <span className="font-['Inter'] text-[#1C77AB] text-xl sm:text-xlx">
               WHY Skedara ?
             </span>
             <span className="font-['Londrina_Solid'] text-[#3FC1E6] text-xs sm:text-sm">

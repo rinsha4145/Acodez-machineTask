@@ -1,23 +1,24 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function BlogSection() {
   const blogPosts = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+      image: "/images/blog1.jpeg",
       title: "The Silent Power Behind Energy Stability: Why IT Operations are the Real MVPs",
       description: "Explore how IT operations quietly underpin energy stability, blending domain expertise technology...",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "/images/blog2.jpeg",
       title: "Green IT: How Sustainable Practices are Reshaping Energy Operations",
       description: "Discover how IT can lead the charge in ESG alignment and sustainability while optimizing energy operations...",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "/images/blog3.jpg",
       title: "The Secret to Success: Why People Matter More Than Ever in IT Outsourcing",
       description: "Learn how a people-first approach transforms organizational success and client relationships...",
     }
@@ -49,7 +50,9 @@ export default function BlogSection() {
             <div key={post.id} className="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 group">
               {/* Image */}
               <div className="relative h-64 overflow-hidden">
-                <img 
+                <Image
+                height={300}
+                width={300} 
                   src={post.image} 
                   alt={post.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -75,6 +78,7 @@ export default function BlogSection() {
             </div>
           ))}
         </div>
+        
       </div>
 
       {/* Bottom right logo/branding element */}

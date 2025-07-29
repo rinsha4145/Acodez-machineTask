@@ -4,7 +4,7 @@ import Image from 'next/image';
 // import './Shape.css';
 export default function Hero() {
   return (
-    <div className="relative flex h-screen w-full items-center justify-center bg-gradient-to-br from-slate-900 to-blue-900 overflow-hidden">
+    <div className="relative flex h-screen w-full  overflow-hidden">
       {/* Hero Background Image */}
       <Image
         src="/images/hero.webp"
@@ -14,11 +14,9 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover z-0"
         priority
       />
-
-     
-      <div className="absolute inset-0 bg-[#0C2A67] opacity-80 shape1" > <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-8">
+         <div className="relative z-20 max-w-6xl  px-6 lg:px-10 py-16 lg:py-24 flex flex-col items-start space-y-8  ">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Global Experts in{' '}
             <span className="text-green-400">Energy</span>{' '}
             IT Operations | Driving Stability, Scalability, and{' '}
@@ -41,7 +39,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      </div>
+      {/* <div className="absolute inset-0 bg-[#0C2A67] opacity-80 shape1" > */}
+
+      {/* </div> */}
       {/* <div className="absolute inset-0 bg-[#1E3A8A] opacity-80 shape2" /> */}
       {/* <div className="absolute inset-0 bg-[#1D4ED8] opacity-80 shape3" /> */}
       {/* <div className="absolute inset-0 bg-[#2563EB] opacity-80 shape4" /> */}
