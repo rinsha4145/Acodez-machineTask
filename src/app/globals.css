@@ -24,6 +24,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.slanted-edge {
+  --p: 35px; /* control the shape (can be percentage) */
+  aspect-ratio: 1;
+  clip-path: polygon(0 var(--p),100% 0,100% 100%,0 100%);
+  border-top-left-radius: 5rem;
+}
+
 .shape1 {
   clip-path: polygon(0 0, 60% 0, 35% 100%, 0 100%);
 }

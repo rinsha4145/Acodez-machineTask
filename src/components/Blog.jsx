@@ -61,7 +61,7 @@ export default function BlogSection() {
               </div>
               
               {/* Content */}
-              <div className="p-8">
+              <div className="relative p-8">
                 <h3 className="text-gray-900 text-xl font-bold mb-4 leading-tight group-hover:text-blue-600 transition-colors duration-300">
                   {post.title}
                 </h3>
@@ -81,14 +81,7 @@ export default function BlogSection() {
         
       </div>
 
-      {/* Bottom right logo/branding element */}
-      <div className="absolute bottom-8 right-8">
-        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
-          <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-            <div className="w-3 h-3 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 }

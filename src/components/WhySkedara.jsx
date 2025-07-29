@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const WhySkedaraSection = () => {
@@ -48,23 +49,17 @@ const WhySkedaraSection = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-1 sm:px-8 ">
         {/* "WHY Skedara?" Text */}
         <div className="flex items-center mb-10 relative">
-          <div className="flex items-center space-x-1">
-            <span className="font-['Inter'] text-[#1C77AB] text-xl sm:text-xlx">
-              WHY Skedara ?
-            </span>
-            <span className="font-['Londrina_Solid'] text-[#3FC1E6] text-xs sm:text-sm">
-              ?
-            </span>
-          </div>
+          <Image width={500} height={500} src="/images/why.svg" className="flex w-1/6 items-center space-x-1"/>
+         
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-36 gap-8">
           {/* Card 1 */}
-          <div className="rounded-4xl bg-blue-100 p-8 h-80 rounded-tr-none">
+          <div className="rounded-4xl bg-blue-100 p-10 h-96  rounded-tr-none slanted-edge">
             <h3 className="text-blue-900 text-xl font-bold mb-8 leading-tight">
               Tailored Solutions With
               <br />
@@ -93,7 +88,7 @@ const WhySkedaraSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="rounded-4xl bg-blue-100 p-8 h-96 rounded-tr-none">
+          <div className="rounded-4xl bg-blue-100 p-10 h-96  rounded-tr-none slanted-edge">
             <h3 className="text-blue-900 text-xl font-bold mb-8 leading-tight">
               Leading IT Toward A<br />
               Greener Future
@@ -127,7 +122,7 @@ const WhySkedaraSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="rounded-4xl bg-blue-100 p-8 h-96 rounded-tr-none">
+          <div className="rounded-4xl bg-blue-100 p-10 h-96  rounded-tr-none slanted-edge">
             <h3 className="text-blue-900 text-xl font-bold mb-8 leading-tight">
               Global Talent Partnerships
             </h3>
